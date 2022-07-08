@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -30,19 +31,8 @@
                     </div>
                     <div class="offcanvas-body">
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Pesquisar
-                            </a>
 
-                        </li>
+                       
 
                         <form class="d-flex">
                             <input class="form-control me-2" type="Pesquisar no app" placeholder="Search"
@@ -52,7 +42,7 @@
                         <div class="accordion" id="accordionPanelsStayOpenExample" style margin 5%>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button" type="button" onclick="Login" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                         aria-controls="panelsStayOpen-collapseOne">
                                         Login Goodpay
@@ -63,17 +53,19 @@
                                     <div class="accordion-body">
                                         <div class="input-group input-group-lg">
                                             <span class="input-group-text" id="inputGroup-sizing-lg">Login</span>
-                                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                            <input id="login" type="text" class="form-control" aria-label="Sizing example input"
                                                 aria-describedby="inputGroup-sizing-lg">
                                         </div>
                                         <div class="input-group input-group-lg">
                                             <span class="input-group-text" id="inputGroup-sizing-lg">Senha</span>
-                                            <input type="password" class="form-control btnAjuste"
+                                            <input id="senha"
+                                            type="password" class="form-control btnAjuste"
                                                 aria-label="Sizing example input"
                                                 aria-describedby="inputGroup-sizing-lg">
                                         </div>
+                                        </div>
                                         <div class="d-grid gap-2 formAjuste">
-                                            <button class="btn btn-primary" type="button">Entrar</button>
+                                            <button class="btn btn-primary" type="button  id="btnEntrar">Entrar</button>
                                             <button class="btn btn-primary" type="button">Cadastre-se</button>
                                         </div>
 
@@ -88,6 +80,7 @@
                                         aria-controls="panelsStayOpen-collapseTwo">
                                         Development team BCW 22
                                 </h2>
+                                </div>
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingTwo">
                                     <div class="accordion-body">
@@ -119,6 +112,7 @@
                                         Soul Code Academy
                                     </button>
                                 </h2>
+                                </div>
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
@@ -168,61 +162,115 @@
                                     fundos gerados por este recurso são investidos em cooperativas de
                                     reciclagem.
                                 </p>
-                                <p class="card-text"><small class="text-muted">Publicado em 07 de julho de 2022</small></p>
+                                <p class="card-text"><small class="text-muted">Publicado em 07 de julho de 2022</small>
+                                </p>
                             </div>
                         </div>
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card mb-3">
-                                    <img src="img/banners/BannerGoodPay3.png" class="card-img-top" alt="...">
-                                    <div class="card body">
-                                        <h5 class="card-title">The pig time</h5>
-                                        <p class="card-text">
-                                            Ao utilizar o sistema de investimento com aniversário você
-                                            aumenta consideravelmente seus lucros, porém tem que agendar uma data 
-                                            para quebrar o cofre, nesta data coletará os lucros acumulados e o 
-                                            capital novamente, aqui garantimos em investimentos de 1 ano 7% do retorno geral
-                                            somado aos dividendos. "-Bora poupar no Pig Time"
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Publicado em 07 de julho de 2022</small></p>
-                                    </div>
-                                </div>
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <img src="..." class="d-block w-100" alt="...">
                     </div>
-                    <div class="card mb-3">
-                        <img src="img/banners/BannerGoodPay.png" class="card-img-top" alt="...">
-                        <div class="card body">
-                            <h5 class="card-title">Work for You</h5>
-                            <p class="card-text"> GoodPay é uma aplicação de cash back focada em ASG
-                                (Agenda de Matriz Sustentavel), assim reduzindo o volume de dinheiro impresso e
-                                capitalizando sobre o capital parado e transformando em renda para micro comunidades
-                                de empreendimento ambiental</p>
-                            <p class="card-text"><small class="text-muted">Publicado em 07 de julho de 2022</small></p>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                            <img src="img/banners/BannerGoodPay3.png" class="card-img-top" alt="...">
+                            <div class="card body">
+                                <h5 class="card-title">The pig time</h5>
+                                <p class="card-text">
+                                    Ao utilizar o sistema de investimento com aniversário você
+                                    aumenta consideravelmente seus lucros, porém tem que agendar uma data
+                                    para quebrar o cofre, nesta data coletará os lucros acumulados e o
+                                    capital novamente, aqui garantimos em investimentos de 1 ano 7% do retorno geral
+                                    somado aos dividendos. "-Bora poupar no Pig Time"
+                                </p>
+                                <p class="card-text"><small class="text-muted">Publicado em 07 de julho de 2022</small>
+                                </p>
+                            </div>
                         </div>
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="card mb-3">
+                <img src="img/banners/BannerGoodPay.png" class="card-img-top" alt="...">
+                <div class="card body">
+                    <h5 class="card-title">Work for You</h5>
+                    <p class="card-text"> GoodPay é uma aplicação de cash back focada em ASG
+                        (Agenda de Matriz Sustentavel), assim reduzindo o volume de dinheiro impresso e
+                        capitalizando sobre o capital parado e transformando em renda para micro comunidades
+                        de empreendimento ambiental</p>
+                    <p class="card-text"><small class="text-muted">Publicado em 07 de julho de 2022</small></p>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <img src="img/quadrado/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Planejamento</h5>
+                        <p class="card-text">Faça seu dinheiro render
+                            utilizando os
+                            sistemas de investimento do GoodPay.</p>
+                        <p class="card-text"><small class="text-muted">7 de julho</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/quadrado/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GP no bolso</h5>
+                        <p class="card-text">Com o App da GoodPay você acompanha seu porquinho de qualquer lugar.</p>
+                        <p class="card-text"><small class="text-muted">7 de julho</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/quadrado/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gaste bem</h5>
+                        <p class="card-text"> Planejar e gastar bem são os segredos de quem deseja
+                            um investimento futuro e sua segurança financeira.
+                        </p>
+                        <p class="card-text"><small class="text-muted">7 de julho</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
 
     </main>
+    <!--Area do modal-->
+    <div id="alertaLogin" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alerta do Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mensagem de alerta.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
+        <script  type="module" src="js/index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
+
     </footer>
 
 </body>
